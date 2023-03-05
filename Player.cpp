@@ -4,8 +4,8 @@ using namespace std;
 
 Player::Player(/* args */)
 {
-    card=' ';
-    _name=" ";
+     card=' ';
+     _name="NULL";
 }
 
 Player::~Player()

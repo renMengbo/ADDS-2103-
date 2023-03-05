@@ -3,7 +3,7 @@
 using namespace std;
 Human::Human(/* args */)
 {
-   _name="hh" ;
+   _name=" Human " ;
 }
 Human::Human(string name)
 {
@@ -14,7 +14,7 @@ Human::~Human()
 {
 }
 char Human::makeMove(){
-    cout <<"please inter you choose.R for rock P for paper S for scissor";
-    cin >>card ;
+    cout <<"please inter you choose.R for rock P for paper S for scissor: " <<endl;
+    cin >> card ;
     return card;
 }

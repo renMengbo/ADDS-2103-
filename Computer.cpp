@@ -1,7 +1,7 @@
 #include "Computer.h"
 Computer::Computer(/* args */)
 {
-   _name ="Computer";
+   _name =" Computer ";
 }
 
 Computer::~Computer()

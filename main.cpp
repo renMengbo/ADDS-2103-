@@ -5,24 +5,21 @@
 #include <iostream>
 using namespace std;
 int main(){
-    string people="";
-    cout <<"please inter you name";
+    string people="Human";
+    cout <<"please inter you name: ";
     cin >>people ;
     Human Human1(people);
-    Human*player1= &Human1;
-    Computer * player2;
-    player2=new Computer;
+    Computer Computer1;
     Referee rf;
-    player1->makeMove();
-    player2->makeMove();
-    Player * winner;
-    winner=rf.refGame(player1,player2);
+   
+   // Player * winner =new Player; 
+    Player *winner = rf.refGame(&Human1,&Computer1);
     if(winner==nullptr){
-        cout<<"Tie";
+        cout<<" Tie " <<endl;
     }
     else{
-        winner->getName();
-    }
-    
-    
+        cout<< winner->getName();
+    }  
+
+    cout <<endl;
 }
