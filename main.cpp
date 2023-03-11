@@ -7,19 +7,19 @@
 using namespace std;
 int main() {
   string people = "Human";
-  cout << "please inter you name: ";
-  cin >> people;
-  Human Human1(people);
+  // cout << "please inter you name: ";
+  // cin >> people;
+  // Human Human1(people);
+  Human Human1;
   Computer Computer1;
   Referee rf;
 
   // Player * winner =new Player;
   Player *winner = rf.refGame(&Human1, &Computer1);
   if (winner == nullptr) {
-    cout << " Tie " << endl;
+    cout << "Tie" ;
   } else {
-    cout << winner->getName() <<"Wins"<<endl;
+    cout << winner->getName() ;
   }
-
   cout << endl;
 }
