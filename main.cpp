@@ -23,3 +23,5 @@ int main(){
 
     cout <<endl;
 }
+//g++ main.cpp
+//./a.out
