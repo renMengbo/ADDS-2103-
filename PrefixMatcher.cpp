@@ -37,7 +37,7 @@ using namespace std;
             }
             current = current->children[c-'0'];
         }
-        current->ID = routerNumber-1; // ?
+        current->ID = routerNumber; // ?
         // cout << "ID:" << routerNumber << endl << endl;
     }
 
